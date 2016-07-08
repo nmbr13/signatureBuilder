@@ -1,5 +1,7 @@
+
 body{
   padding:30px;
+  width: 800px;
 }
 
 .displayArea{
@@ -7,4 +9,18 @@ body{
   width: 600px;
   height: 400px;
   border:#555;
+}
+#header{
+    width:100%;
+    background-color: white;
+}
+#sigContainer{
+    position: relative;
+    top: 0px;
+    width:66%
+}
+#htmlContainer{
+    position: relative;
+    top:0px;
+    width:66%;
 }
