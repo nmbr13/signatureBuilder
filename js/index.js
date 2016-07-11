@@ -1,5 +1,5 @@
 var array = [];
-var firstName,lastName,role,phone,skype,address;
+var firstName, lastName, role, phone, skype, address;
 var html = "";
 $('button').click(function(event) {
     // Get all the forms elements and their values in one step
@@ -15,34 +15,37 @@ $('button').click(function(event) {
     fillForm();
     generateHTML();
 });
-function fillForm(){
-  $('#name').text(firstName + " " + lastName);
-  $('#line2').html(role + " <a href='http://cmon.com'>, CMON Inc.</a>");
-  $('#line3').html("<strong>T: </strong>" + phone + " | <strong>Skype:</strong> " +  skype);
-  getAddress();
-};
-function getAddress(){
-  switch(address){
-    case "USA":
-      $('#line4').text("1290 Old Alpharetta Road,");
-      $('#line5').text("Alpharetta GA, 30005");
-      $('#line6').hide();
-      break;
-    case "Brazil":
-      $('#line4').text("1290 Old Alpharetta Road,");
-      $('#line5').text("São Paulo - SP");
-      $('#line6').show().text("05409-003 Brazil");
-      break;
-    case "Singapore":
-      $('#line4').text("133 New Bridge Road");
-      $('#line5').text("#20-09/10 Chinatown Point");
-      $('#line6').show().text("Singapore 059413");
-      break;
-  }
-}
-function generateHTML(){
-  $('#textArea').text($('#gSig').html());
-}
-function getPhone(phone){
 
+function fillForm() {
+    $('#name').text(firstName + " " + lastName);
+    $('#line2').html(role + " <a href='http://cmon.com'>, CMON Inc.</a>");
+    $('#line3').html("<strong>T: </strong>" + phone + " | <strong>Skype:</strong> " + skype);
+    getAddress();
+};
+
+function getAddress() {
+    switch (address) {
+        case "USA":
+            $('#logo').html('<img src="imgs/small logo.png" style="height:132px"alt="CMON Logo" />');
+            $('#line4').text("1290 Old Alpharetta Road,");
+            $('#line5').text("Alpharetta GA, 30005");
+            $('#line6').hide();
+            break;
+        case "Brazil":
+            $('#logo').html('<img src="imgs/small logo.png" style="height:151px"alt="CMON Logo" />');
+            $('#line4').text("1290 Old Alpharetta Road,");
+            $('#line5').text("São Paulo - SP");
+            $('#line6').show().text("05409-003 Brazil");
+            break;
+        case "Singapore":
+            $('#logo').html('<img src="imgs/small logo.png" style="height:151px"alt="CMON Logo" />');
+            $('#line4').text("133 New Bridge Road");
+            $('#line5').text("#20-09/10 Chinatown Point");
+            $('#line6').show().text("Singapore 059413");
+            break;
+    }
+}
+
+function generateHTML() {
+    $('#textArea').text($('#gSig').html());
 }
