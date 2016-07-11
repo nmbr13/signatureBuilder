@@ -41,8 +41,8 @@ function getAddress(){
   }
 }
 function generateHTML(){
-  $('textarea').text($('#gSig').html());
+  $('#textArea').text($('#gSig').html());
 }
 function getPhone(phone){
-  
+
 }

@@ -11,95 +11,99 @@
 <body>
 
 
-<div>
-    <div id="header">
-        <h1>CMON Signature Generator</h1>
-        <hr />
-    </div>
-    <div id=formContainer>
-        <form id="myForm">
-            <div>
-                <label for="firstName">First Name:</label>
-                <br />
-                <input type="text" id="firstName" name="userFirstName" value="this" />
+    <div id="masterContainer" class="container">
+        <div class="row">
+            <div class="col-md-12" id="header">
+                <h1>CMON Signature Generator</h1>
+                <hr />
             </div>
-            <div>
-                <label for="lastName">Last Name</label>
-                <br />
-                <input type="text" id="lastName" name="userLastName" value="this" />
-            </div>
-            <div>
-                <label for="role">Role</label>
-                <br />
-                <input type="text" id="role" name="userRole" value="This" />
-            </div>
-            <div>
-                <label for="phone">Phone Number:</label>
-                <br />
-                <input type="tel" id="phone" name="phone" value="This" />
-            </div>
-            <div>
-                <label for="skype">Skype</label>
-                <br />
-                <input type="text" id="skype" name="userSkype" value="This" />
-            </div>
-            <div>
-                <label for="address">Address</label>
-                <br />
-                <form>
-                    <input type="radio" id="address" name="address" value='USA' checked/> USA
-                    <br />
-                    <input type="radio" id="address" name="address" value='Brazil' /> Brazil
-                    <br />
-                    <input type="radio" id="address" name="address" value='Singapore' /> Singapore
+        </div>
+        <div class="row">
+            <div class="col-md-4" id='formContainer'>
+                <form id="myForm">
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <br />
+                        <input type="text" id="firstName" name="userFirstName" value="this" />
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <br />
+                        <input type="text" id="lastName" name="userLastName" value="this" />
+                    </div>
+                    <div>
+                        <label for="role">Role</label>
+                        <br />
+                        <input type="text" id="role" name="userRole" value="This" />
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <br />
+                        <input type="tel" id="phone" name="phone" value="This" />
+                    </div>
+                    <div>
+                        <label for="skype">Skype</label>
+                        <br />
+                        <input type="text" id="skype" name="userSkype" value="This" />
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <br />
+                        <form>
+                            <input type="radio" id="address" name="address" value='USA' checked/> USA
+                            <br />
+                            <input type="radio" id="address" name="address" value='Brazil' /> Brazil
+                            <br />
+                            <input type="radio" id="address" name="address" value='Singapore' /> Singapore
+                        </form>
+                    </div>
                 </form>
+                <br />
+                <button id="submitButton" class="btn btn-primary">Submit</button>
             </div>
-        </form>
-        <br />
-        <button id="submitButton" class="btn btn-primary">Submit</button>
-    </div>
-    
-    <div id="previewContainer">
-        <div id = sigContainer>
-            <div id='gSig' style="border: 1px solid black; width: auto; ">
-                <table>
-                    <tr>
-                        <td id="logo" rowspan="2">
-                            <img src="https://placehold.it/150x150" alt="" />
-                        </td>
-                        <td style="padding-left:10px;">
-                            <strong id="name" style="text-transform:capitalize; font-size:1.25em"></strong>
-                            <br/>
-                            <span id='line2' style="text-transform:capitalize;"></span>
-                            <br/>
-                            <span id="line3"></span>
-                            <br />
-                            <span id="line4"></span>
-                            <br />
-                            <span id="line5"></span>
-                            <br />
-                            <span id="line6"></span>
-                    </tr>
-                    <tr>
-                        <td style="padding-left:10px;">
-                            <a href="https://www.facebook.com/coolminiornot/"><img src="http://dark-age.com/wp-content/uploads/2014/03/slider-page.png" alt="Facebook Link" /></a>
-                            <a href="https://www.instagram.com/cmongames/"><img src="http://dark-age.com/wp-content/uploads/2014/03/slider-page.png" alt="Instagram Link" /></a>
-                            <a href="https://twitter.com/CMONGames"><img src="http://dark-age.com/wp-content/uploads/2014/03/slider-page.png" alt="Twitter Link" /></a>
-                        </td>
-                    </tr>
-                    </td>
-                    </tr>
-                </table>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-mid-12" id="sigContainer">
+                        <div id='gSig'>
+                            <table>
+                                <tr>
+                                    <td id="logo" rowspan="2">
+                                        <img src="https://placehold.it/150x150" alt="" />
+                                    </td>
+                                    <td style="padding-left:10px;">
+                                        <strong id="name" style="text-transform:capitalize; font-size:1.25em"></strong>
+                                        <br/>
+                                        <span id='line2' style="text-transform:capitalize;"></span>
+                                        <br/>
+                                        <span id="line3"></span>
+                                        <br />
+                                        <span id="line4"></span>
+                                        <br />
+                                        <span id="line5"></span>
+                                        <br />
+                                        <span id="line6"></span>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:10px;">
+                                        <a href="https://www.facebook.com/coolminiornot/"><img src="http://dark-age.com/wp-content/uploads/2014/03/slider-page.png" alt="Facebook Link" /></a>
+                                        <a href="https://www.instagram.com/cmongames/"><img src="http://dark-age.com/wp-content/uploads/2014/03/slider-page.png" alt="Instagram Link" /></a>
+                                        <a href="https://twitter.com/CMONGames"><img src="http://dark-age.com/wp-content/uploads/2014/03/slider-page.png" alt="Twitter Link" /></a>
+                                    </td>
+                                </tr>
+                                </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-mid-12" id="htmlContainer">
+                        <div id='gHTML'>
+                            <textarea id="textArea" type="text"> Copy this code into your Signature </textarea>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-        <div id = htmlContainer>
-            <div id='gHTML'>
-                    <textarea type="text" style="width:500px;height:250px;" />Copy this into your Signature</textarea>
-            </div>
-        </div>
     </div>
-</div>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src="js/index.js"></script>
 
