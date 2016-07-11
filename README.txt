@@ -1,1 +1,0 @@
-This is a small app for CMON employees to create signatures for their email. 

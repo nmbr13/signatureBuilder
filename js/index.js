@@ -1,6 +1,7 @@
 var array = [];
-var firstName, lastName, role, phone, skype, address;
+// var firstName, lastName, role, phone, skype, address;
 var html = "";
+var val;
 
 function fillForm() {
     $('#name').text(firstName + " " + lastName);
@@ -36,15 +37,19 @@ function generateHTML() {
     $('#textArea').text($('#gSig').html());
 }
 
-function exportToHTML() {
-    var myHTML = $('#gSig').html();
-    window.open('data:text/text;charset=utf-8,' + escape(myHTML));
-}
-
 $('#submitButton').click(function(event) {
     // Get all the forms elements and their values in one step
     array = $('#myForm').serializeArray();
-    console.log(array);
+    for (i = 0; i < array.length; i++) {
+        if (array[i].value == null || array[i].value == '') {
+            console.log(array[i].name);
+            if (array[i].name == "userLastName") {
+                array[i].value == " ";
+            } else {
+                array[i].value = "N/A";
+            }
+        }
+    }
     firstName = array[0].value;
     lastName = array[1].value;
     role = array[2].value;
@@ -55,3 +60,9 @@ $('#submitButton').click(function(event) {
     fillForm();
     generateHTML();
 });
+
+$('#download').click(function(){
+    var data = $('#gSig').html();
+    var htmlContent = "data:text/html;charset=utf-8,";
+    data.
+})

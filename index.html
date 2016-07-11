@@ -20,50 +20,55 @@
         </div>
         <div class="row">
             <div class="col-md-4" id='formContainer'>
+                <h5>Click Submit to update your signature</h5>
+                <hr>
+
                 <form id="myForm">
                     <div>
                         <label for="firstName">First Name:</label>
                         <br />
-                        <input type="text" id="firstName" name="userFirstName" value="this" />
+                        <input type="text" id="firstName" name="userFirstName" placeholder="First Name" />
                     </div>
                     <div>
                         <label for="lastName">Last Name</label>
                         <br />
-                        <input type="text" id="lastName" name="userLastName" value="this" />
+                        <input type="text" id="lastName" name="userLastName" placeholder="Last Name" />
                     </div>
                     <div>
                         <label for="role">Role</label>
                         <br />
-                        <input type="text" id="role" name="userRole" value="This" />
+                        <input type="text" id="role" name="userRole" placeholder="Designer, Writer, etc" />
                     </div>
                     <div>
                         <label for="phone">Phone Number:</label>
                         <br />
-                        <input type="tel" id="phone" name="phone" value="This" />
+                        <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX" />
                     </div>
                     <div>
                         <label for="skype">Skype</label>
                         <br />
-                        <input type="text" id="skype" name="userSkype" value="This" />
+                        <input type="text" id="skype" name="userSkype" placeholder="Skype" />
                     </div>
                     <div>
                         <label for="address">Address</label>
                         <br />
-                        <form>
-                            <input type="radio" id="address" name="address" value='USA' checked/> USA
-                            <br />
-                            <input type="radio" id="address" name="address" value='Brazil' /> Brazil
-                            <br />
-                            <input type="radio" id="address" name="address" value='Singapore' /> Singapore
-                        </form>
+                        <input type="radio" id="address" name="address" value='USA' checked/> USA
+                        <br />
+                        <input type="radio" id="address" name="address" value='Brazil' /> Brazil
+                        <br />
+                        <input type="radio" id="address" name="address" value='Singapore' /> Singapore
                     </div>
+                    <br>
                 </form>
-                <br />
                 <button id="submitButton" class="btn btn-primary">Submit</button>
+                <br />
+
             </div>
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-mid-12" id="sigContainer">
+                        <h5>Copy the signature below into your signature options on https://outlook.office365.com/</h5>
+                        <hr>
                         <div id='gSig'>
                             <table style="color:#442179">
                                 <tr style="color:#442179">
@@ -86,20 +91,19 @@
                                     <td style="padding-left:10px;">
                                         <a href="https://www.facebook.com/coolminiornot/"><img style="width:25px;" src="http://assets.cmon.com/Icons/Facebook.png" alt="Facebook Link" /></a>
                                         <a href="https://www.instagram.com/cmongames/"><img style="width:25px;" src="http://assets.cmon.com/Icons/instagram.png" alt="Instagram Link" /></a>
-                                        <a href="https://twitter.com/CMONGames"><img class="socialIcon" style="width:25px;" src="http://assets.cmon.com/Icons/twitter.png" alt="Twitter Link" /></a>
+                                        <a href="https://twitter.com/CMONGames"><img style="width:25px;" src="http://assets.cmon.com/Icons/twitter.png" alt="Twitter Link" /></a>
                                     </td>
                                 </tr>
                                 </td>
                             </table>
                         </div>
+                        <hr>
+                        <h5>...or copy the below HTML into your favorite email client.</h5>
                     </div>
                     <div class="col-mid-12" id="htmlContainer">
                         <div id='gHTML'>
                             <textarea id="textArea" type="text"> Copy this code into your Signature </textarea>
                         </div>
-                    </div>
-                    <div class="col-mid-12" id="htmlContainer">
-                        <button class="btn btn-primary"> click here to </button>
                     </div>
                 </div>
             </div>
