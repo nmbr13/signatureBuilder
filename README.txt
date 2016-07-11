@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/nmbr13/pen/yJzOQY.
-
- 
+This is a small app for CMON employees to create signatures for their email. 
