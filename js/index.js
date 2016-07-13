@@ -20,7 +20,7 @@ function getAddress() {
             break;
         case "Brazil":
             $('#logo').html('<a href="http://www.cmon.com/"><img src="http://assets.cmon.com/Logos/small%20logo.png" style="height:151px"alt="CMON Logo" />');
-            $('#line4').text("1290 Old Alpharetta Road,");
+            $('#line4').text("Rua Capote Valente 1429,");
             $('#line5').text("São Paulo - SP");
             $('#line6').show().text("05409-003 Brazil");
             break;
@@ -60,9 +60,3 @@ $('#submitButton').click(function(event) {
     fillForm();
     generateHTML();
 });
-
-$('#download').click(function(){
-    var data = $('#gSig').html();
-    var htmlContent = "data:text/html;charset=utf-8,";
-    data.
-})
