@@ -5,9 +5,11 @@ body{
 #myForm{
 /*padding-left: 40px;*/
 }
-#masterContainer{
+.masterContainer{
     width:850px;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     border-radius: 10px;
 }

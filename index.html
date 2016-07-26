@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>signatureBuilder Tabled</title>
+    <title>CoolMiniorNot Email-Signature Generator</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +11,7 @@
 <body>
 
 
-    <div id="masterContainer" class="container">
+    <div  class="container masterContainer">
         <div class="row">
             <div class="col-md-12" id="header">
                 <h1>CMON Signature Generator</h1>
@@ -62,13 +62,11 @@
                 </form>
                 <button id="submitButton" class="btn btn-primary">Submit</button>
                 <br />
-
             </div>
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-mid-12" id="sigContainer">
-                        <h5>Copy the signature below into your signature options on https://outlook.office365.com/</h5>
-                        <hr>
+                        <h5>Copy the signature below or the HTML Code into your email signature settings.</h5>
                         <div id='gSig'>
                             <table style="color:#442179;font-family:sans-serif;">
                                 <tr style="color:#442179">
@@ -107,6 +105,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container masterContainer" style="padding:20px;text-align:center">
+        <div class="row">
+            <p>The email signature that you generated and the process for installing it will vary on which email system you are using. If you don't know how to install your email signature please see the links below.</p>
+        </div>
+        <div class="row">
+            <a href="http://mydesignpad.com/how-to-install-html-email-signature-for-google-gmail/"><span class="btn btn-primary">Gmail</span></a>
+            <a href="http://www.laptopmag.com/articles/email-signature-microsoft-outlook"><span class="btn btn-primary">Outlook 2016</span></a>
+            <a href="https://support.office.com/en-us/article/Create-and-add-an-email-signature-in-Outlook-Web-App-0f230564-11b9-4239-83de-f10cbe4dfdfc"><span class="btn btn-primary">Outlook 365</span></a>
+            <a href="http://www.mail-signatures.com/articles/how-to-set-up-email-signature-in-thunderbird/"><span class="btn btn-primary">Thunderbird</span></a>
         </div>
     </div>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
