@@ -60,3 +60,7 @@ $('#submitButton').click(function(event) {
     fillForm();
     generateHTML();
 });
+
+$('#toggleHTML').click(function(){
+    $('#gHTML').toggle();
+});

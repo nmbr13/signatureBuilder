@@ -5,13 +5,18 @@ body{
 #myForm{
 /*padding-left: 40px;*/
 }
+#gHTML{
+    display:none;
+}
 .masterContainer{
     width:850px;
+    min-height: 725px;
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
     border-radius: 10px;
+    padding:20px;
 }
 #header{
     text-align: center;
