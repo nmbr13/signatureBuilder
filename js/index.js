@@ -13,19 +13,19 @@ function fillForm() {
 function getAddress() {
     switch (address) {
         case "USA":
-            $('#logo').html('<a href="http://www.cmon.com/"><img src="http://signature.cmon.com/imgs/small-logo.png" style="height:132px"alt="CMON Logo" />');
+            $('#logo').html('<a href="http://www.cmon.com/"><img src="http://signature.cmon.com/imgs/CMON-Logo.png" style="height:100px" alt="CMON Logo" />');
             $('#line4').text("1290 Old Alpharetta Road");
             $('#line5').text("Alpharetta GA, 30005");
             $('#line6').hide();
             break;
         case "Brazil":
-            $('#logo').html('<a href="http://www.cmon.com/"><img src="http://signature.cmon.com/imgs/small-logo.png" style="height:151px"alt="CMON Logo" />');
+            $('#logo').html('<a href="http://www.cmon.com/"><img src="http://signature.cmon.com/imgs/CMON-Logo-Brazil.png" style="height:115px" alt="CMON Logo" />');
             $('#line4').text("Rua Capote Valente 1429");
             $('#line5').text("São Paulo - SP");
             $('#line6').show().text("05409-003 Brazil");
             break;
         case "Singapore":
-            $('#logo').html('<a href="http://www.cmon.com/"><img src="http://signature.cmon.com/imgs/small-logo.png" style="height:151px"alt="CMON Logo" />');
+            $('#logo').html('<a href="http://www.cmon.com/"><img src="http://signature.cmon.com/imgs/CMON-Logo-Brazil.png" style="height:115px" alt="CMON Logo" />');
             $('#line4').text("133 New Bridge Road");
             $('#line5').text("#20-09/10 Chinatown Point");
             $('#line6').show().text("Singapore 059413");
